@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Dermiva — Malaysian skincare rooted in science and nature. Gentle, effective formulas for every skin type.">
-  <title>Dermiva — Malaysian Skincare</title>
+  <meta name="description" content="Dermiva — A barrier-first skincare brand. Gentle Gel Cleanser for oily and sensitive skin. pH 5.5, fragrance-free, made in Malaysia.">
+  <title>Dermiva — Care Beyond Cleansing</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -39,9 +39,10 @@
     <section class="hero" id="hero">
       <div class="container hero__inner">
         <div class="hero__content">
-          <p class="eyebrow">Malaysian Skincare</p>
-          <h1 class="hero__title">Science-backed care for <em>every</em> skin type</h1>
-          <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <p class="eyebrow">Barrier-First Skincare · Made in Malaysia</p>
+          <h1 class="hero__title">Care Beyond Cleansing</h1>
+          <p class="hero__tagline">Healthy Skin Starts with a Healthy Barrier</p>
+          <p class="hero__text">Dermiva is a barrier-first skincare brand dedicated to creating gentle, effective skincare that supports healthy skin every day — designed for Malaysia's hot and humid climate.</p>
           <div class="hero__actions">
             <a href="#product" class="btn btn--primary">Discover Our Cleanser</a>
             <a href="#story" class="btn btn--ghost">Our Story</a>
@@ -50,15 +51,15 @@
         <div class="hero__visual">
           <div class="hero__image-wrap">
             <img
-              src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=800&h=1000&fit=crop&q=80"
-              alt="Dermiva skincare product placeholder"
+              src="images/gentle-gel-cleanser.png"
+              alt="Dermiva Gentle Gel Cleanser — for oily and sensitive skin"
               class="hero__image"
               loading="eager"
             >
           </div>
           <div class="hero__badge">
-            <span class="hero__badge-label">Dermatologist</span>
-            <span class="hero__badge-value">Tested</span>
+            <span class="hero__badge-label">pH 5.5</span>
+            <span class="hero__badge-value">Balanced</span>
           </div>
         </div>
       </div>
@@ -70,52 +71,82 @@
         <div class="section__header section__header--center">
           <p class="eyebrow">Featured Product</p>
           <h2 class="section__title">Gentle Gel Cleanser</h2>
-          <p class="section__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A gentle, pH-balanced formula designed for daily use.</p>
+          <p class="section__subtitle">For Oily &amp; Sensitive Skin · pH 5.5 · Fragrance-Free</p>
         </div>
         <div class="product__grid">
           <div class="product__gallery">
             <div class="product__image-main">
               <img
-                src="https://images.unsplash.com/photo-1620916560428-4fe4eecac4dd?w=600&h=700&fit=crop&q=80"
-                alt="Gentle Gel Cleanser placeholder"
+                id="productMainImage"
+                src="images/gentle-gel-cleanser.png"
+                alt="Dermiva Gentle Gel Cleanser"
                 loading="lazy"
               >
             </div>
             <div class="product__thumbs">
-              <div class="product__thumb product__thumb--active">
-                <img src="https://images.unsplash.com/photo-1620916560428-4fe4eecac4dd?w=120&h=120&fit=crop&q=80" alt="" loading="lazy">
-              </div>
-              <div class="product__thumb">
-                <div class="placeholder-box placeholder-box--sm"></div>
-              </div>
-              <div class="product__thumb">
-                <div class="placeholder-box placeholder-box--sm"></div>
-              </div>
+              <button type="button" class="product__thumb product__thumb--active" data-image="images/gentle-gel-cleanser.png" aria-label="View product image 1">
+                <img src="images/gentle-gel-cleanser.png" alt="" loading="lazy">
+              </button>
+              <button type="button" class="product__thumb" data-image="images/gentle-gel-cleanser.png" aria-label="View product image 2">
+                <img src="images/gentle-gel-cleanser.png" alt="" loading="lazy">
+              </button>
+              <button type="button" class="product__thumb" data-image="images/gentle-gel-cleanser.png" aria-label="View product image 3">
+                <img src="images/gentle-gel-cleanser.png" alt="" loading="lazy">
+              </button>
             </div>
           </div>
           <div class="product__details">
-            <p class="product__price">RM 89.00</p>
-            <p class="product__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+            <div class="product__pricing">
+              <p class="product__price">RM 69</p>
+              <p class="product__promo">Launch promo: <strong>RM 55</strong> · Bundle of 2: <strong>RM 99</strong></p>
+            </div>
+            <p class="product__desc">A gentle daily facial cleanser formulated to effectively remove dirt, excess oil, sunscreen residue, and daily impurities while helping maintain the skin's natural moisture barrier.</p>
+            <p class="product__desc">Unlike many cleansers that leave the skin feeling tight or dry, Dermiva leaves skin feeling clean, refreshed, hydrated, and comfortable after every wash.</p>
             <ul class="product__features">
               <li>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#A5BEAE"/><path d="M6 10l3 3 5-6" stroke="#4D7F71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                pH-balanced formula
+                pH 5.5 Skin-Friendly Formula
               </li>
               <li>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#A5BEAE"/><path d="M6 10l3 3 5-6" stroke="#4D7F71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Fragrance-free
+                Fragrance-Free
               </li>
               <li>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#A5BEAE"/><path d="M6 10l3 3 5-6" stroke="#4D7F71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Suitable for sensitive skin
+                Gentle, Non-Stripping Cleansing
               </li>
               <li>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#A5BEAE"/><path d="M6 10l3 3 5-6" stroke="#4D7F71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                150ml
+                Helps Maintain Skin Barrier
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#A5BEAE"/><path d="M6 10l3 3 5-6" stroke="#4D7F71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Suitable for Daily Use
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#A5BEAE"/><path d="M6 10l3 3 5-6" stroke="#4D7F71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Dermatologically Inspired Formula
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#A5BEAE"/><path d="M6 10l3 3 5-6" stroke="#4D7F71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                130ml / 4.39 fl. oz.
               </li>
             </ul>
             <a href="#contact" class="btn btn--primary btn--full">Where to Buy</a>
           </div>
+        </div>
+
+        <div class="product__benefits">
+          <h3 class="product__benefits-title">Benefits</h3>
+          <ul class="product__benefits-list">
+            <li>Effectively removes dirt and excess oil</li>
+            <li>Cleanses without over-drying the skin</li>
+            <li>Helps maintain skin hydration</li>
+            <li>Supports a healthy skin barrier</li>
+            <li>Helps soothe sensitive skin</li>
+            <li>Leaves skin soft, clean and comfortable</li>
+            <li>Suitable for everyday morning and night use</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -126,37 +157,58 @@
         <div class="ingredients__inner">
           <div class="ingredients__content">
             <p class="eyebrow">Key Ingredients</p>
-            <h2 class="section__title">Thoughtfully chosen, clinically proven</h2>
-            <p class="section__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Each ingredient is selected for efficacy and skin compatibility.</p>
+            <h2 class="section__title">Barrier-friendly, thoughtfully chosen</h2>
+            <p class="section__subtitle">With Centella Asiatica, Ceramide NP &amp; Panthenol. Each ingredient is selected to cleanse gently while supporting hydration and skin comfort.</p>
           </div>
           <div class="ingredients__grid">
             <article class="ingredient-card">
-              <div class="ingredient-card__icon">
-                <div class="placeholder-box placeholder-box--icon"></div>
+              <div class="ingredient-card__icon" aria-hidden="true">
+                <span class="ingredient-card__dot"></span>
+              </div>
+              <h3 class="ingredient-card__title">Ceramide NP</h3>
+              <p class="ingredient-card__text">Helps support and maintain the skin's natural moisture barrier for comfortable, hydrated-feeling skin after cleansing.</p>
+            </article>
+            <article class="ingredient-card">
+              <div class="ingredient-card__icon" aria-hidden="true">
+                <span class="ingredient-card__dot"></span>
+              </div>
+              <h3 class="ingredient-card__title">Centella Asiatica Extract</h3>
+              <p class="ingredient-card__text">A soothing botanical extract known for its calming properties, helping comfort sensitive and easily irritated skin.</p>
+            </article>
+            <article class="ingredient-card">
+              <div class="ingredient-card__icon" aria-hidden="true">
+                <span class="ingredient-card__dot"></span>
+              </div>
+              <h3 class="ingredient-card__title">Panthenol (Vitamin B5)</h3>
+              <p class="ingredient-card__text">Helps attract and retain moisture, supporting skin hydration and a soft, comfortable feel after every wash.</p>
+            </article>
+            <article class="ingredient-card">
+              <div class="ingredient-card__icon" aria-hidden="true">
+                <span class="ingredient-card__dot"></span>
               </div>
               <h3 class="ingredient-card__title">Niacinamide</h3>
-              <p class="ingredient-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Helps improve skin texture and reduce the appearance of pores.</p>
+              <p class="ingredient-card__text">Helps support the skin barrier and improve the overall appearance of skin texture with regular daily use.</p>
             </article>
             <article class="ingredient-card">
-              <div class="ingredient-card__icon">
-                <div class="placeholder-box placeholder-box--icon"></div>
+              <div class="ingredient-card__icon" aria-hidden="true">
+                <span class="ingredient-card__dot"></span>
               </div>
-              <h3 class="ingredient-card__title">Centella Asiatica</h3>
-              <p class="ingredient-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A soothing botanical known for its calming properties.</p>
+              <h3 class="ingredient-card__title">Betaine</h3>
+              <p class="ingredient-card__text">A gentle humectant that helps maintain skin hydration and comfort during cleansing without stripping.</p>
             </article>
             <article class="ingredient-card">
-              <div class="ingredient-card__icon">
-                <div class="placeholder-box placeholder-box--icon"></div>
+              <div class="ingredient-card__icon" aria-hidden="true">
+                <span class="ingredient-card__dot"></span>
               </div>
-              <h3 class="ingredient-card__title">Hyaluronic Acid</h3>
-              <p class="ingredient-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Deeply hydrates without stripping the skin barrier.</p>
+              <h3 class="ingredient-card__title">Sodium PCA</h3>
+              <p class="ingredient-card__text">A natural moisturizing factor that helps bind water to the skin, supporting hydration throughout your cleanse.</p>
             </article>
             <article class="ingredient-card">
-              <div class="ingredient-card__icon">
-                <div class="placeholder-box placeholder-box--icon"></div>
+              <div class="ingredient-card__icon" aria-hidden="true">
+                <span class="ingredient-card__dot"></span>
               </div>
-              <h3 class="ingredient-card__title">Ceramides</h3>
-              <p class="ingredient-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Supports and restores the natural moisture barrier.</p>
+              <h3 class="ingredient-card__title">Green Tea Extract</h3>
+              <p class="ingredient-card__text">A gentle antioxidant-rich botanical that helps soothe the skin and support a refreshed, comfortable feel.</p>
             </article>
           </div>
         </div>
@@ -170,25 +222,26 @@
           <div class="story__visual">
             <div class="story__image-stack">
               <img
-                src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=500&h=600&fit=crop&q=80"
-                alt="Dermiva brand story placeholder"
+                src="images/gentle-gel-cleanser.png"
+                alt="Dermiva Gentle Gel Cleanser product"
                 class="story__image story__image--main"
                 loading="lazy"
               >
               <div class="story__image story__image--accent">
-                <div class="placeholder-box placeholder-box--story"></div>
+                <img src="images/gentle-gel-cleanser.png" alt="" loading="lazy">
               </div>
             </div>
           </div>
           <div class="story__content">
             <p class="eyebrow">Our Story</p>
             <h2 class="section__title">Born in Malaysia, made for the tropics</h2>
-            <p class="story__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-            <p class="story__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="story__text">Dermiva is a clinical-inspired skincare brand that focuses on gentle, effective, and barrier-friendly skincare for everyday use. We believe healthy skin starts with a healthy skin barrier.</p>
+            <p class="story__text">Our products are designed to cleanse and care for the skin without causing unnecessary irritation or dryness. Gentle cleansing should never come at the expense of your skin's comfort — Dermiva is designed to cleanse effectively while helping maintain hydration and supporting the skin barrier.</p>
+            <p class="story__text">Our goal is to create simple, trustworthy skincare suitable for Malaysia's hot and humid climate — for office workers, students, beginners starting skincare, and anyone looking for a gentle everyday cleanser.</p>
             <div class="story__stats">
               <div class="story__stat">
-                <span class="story__stat-value">100%</span>
-                <span class="story__stat-label">Cruelty Free</span>
+                <span class="story__stat-value">pH 5.5</span>
+                <span class="story__stat-label">Balanced Formula</span>
               </div>
               <div class="story__stat">
                 <span class="story__stat-value">0</span>
@@ -210,34 +263,61 @@
         <div class="faq__header">
           <p class="eyebrow">FAQ</p>
           <h2 class="section__title">Common questions</h2>
-          <p class="section__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Find answers to the most frequently asked questions below.</p>
+          <p class="section__subtitle">Everything you need to know about Dermiva Gentle Gel Cleanser. Cleanse gently. Care deeply.</p>
         </div>
         <div class="faq__list" id="faqList">
           <details class="faq__item" open>
             <summary class="faq__question">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+              What skin types is Dermiva Gentle Gel Cleanser suitable for?
               <span class="faq__icon" aria-hidden="true"></span>
             </summary>
             <div class="faq__answer">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p>Dermiva Gentle Gel Cleanser is suitable for oily, combination, sensitive, acne-prone, and normal skin. It is especially formulated for oily and sensitive skin, making it ideal for daily facial cleansing in Malaysia's hot and humid climate.</p>
             </div>
           </details>
           <details class="faq__item">
             <summary class="faq__question">
-              Sed do eiusmod tempor incididunt ut labore?
+              Will this cleanser leave my skin feeling tight or dry?
               <span class="faq__icon" aria-hidden="true"></span>
             </summary>
             <div class="faq__answer">
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>No. Unlike many cleansers that leave the skin feeling tight or dry, Dermiva is designed for gentle, non-stripping cleansing. It effectively removes dirt and excess oil while helping maintain skin hydration and supporting a healthy skin barrier — leaving skin soft, clean, and comfortable after every wash.</p>
             </div>
           </details>
           <details class="faq__item">
             <summary class="faq__question">
-              Is this product suitable for sensitive skin?
+              Is Dermiva fragrance-free?
               <span class="faq__icon" aria-hidden="true"></span>
             </summary>
             <div class="faq__answer">
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <p>Yes. Dermiva Gentle Gel Cleanser is completely fragrance-free, making it a suitable choice for sensitive skin and those who prefer skincare without added fragrance.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">
+              What is the pH level of the cleanser?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__answer">
+              <p>Dermiva Gentle Gel Cleanser features a pH 5.5 skin-friendly formula, designed to cleanse effectively while respecting the skin's natural balance and supporting barrier health.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">
+              How should I use Dermiva Gentle Gel Cleanser?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__answer">
+              <p>Apply a small amount to damp skin, gently massage in circular motions, then rinse thoroughly with lukewarm water. Use morning and night as part of your daily skincare routine. Suitable for everyday use.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">
+              What are the pricing options?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__answer">
+              <p>Dermiva Gentle Gel Cleanser retails at RM 69. Launch promotion price is RM 55. A bundle of 2 bottles is available at RM 99. Each bottle contains 130ml / 4.39 fl. oz.</p>
             </div>
           </details>
           <details class="faq__item">
@@ -246,16 +326,7 @@
               <span class="faq__icon" aria-hidden="true"></span>
             </summary>
             <div class="faq__answer">
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-            </div>
-          </details>
-          <details class="faq__item">
-            <summary class="faq__question">
-              What is your return policy?
-              <span class="faq__icon" aria-hidden="true"></span>
-            </summary>
-            <div class="faq__answer">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida risus commodo viverra maecenas accumsan.</p>
+              <p>Contact us via email or follow us on social media for the latest information on where to buy. Dermiva is distributed by Lumicore Trading and made in Malaysia.</p>
             </div>
           </details>
         </div>
@@ -267,8 +338,8 @@
       <div class="container contact__inner">
         <div class="contact__content">
           <p class="eyebrow">Get in Touch</p>
-          <h2 class="section__title">Connect with us</h2>
-          <p class="section__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Follow us on social media or reach out directly — we'd love to hear from you.</p>
+          <h2 class="section__title">Start your healthy skin journey</h2>
+          <p class="section__subtitle">Gentle cleansing for healthier-looking skin. Follow us on social media or reach out directly — we'd love to hear from you.</p>
           <div class="contact__links">
             <a href="mailto:hello@dermiva.com" class="contact__link">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
@@ -289,7 +360,7 @@
           </div>
         </div>
         <div class="contact__visual">
-          <div class="placeholder-box placeholder-box--contact"></div>
+          <img src="images/gentle-gel-cleanser.png" alt="Dermiva Gentle Gel Cleanser" loading="lazy">
         </div>
       </div>
     </section>
@@ -299,8 +370,11 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer__inner">
-      <a href="#hero" class="logo logo--footer">Dermiva</a>
-      <p class="footer__copy">&copy; 2026 Dermiva. All rights reserved. Lorem ipsum dolor sit amet.</p>
+      <div class="footer__brand">
+        <a href="#hero" class="logo logo--footer">Dermiva</a>
+        <p class="footer__tagline">Care Beyond Cleansing</p>
+      </div>
+      <p class="footer__copy">&copy; 2026 Dermiva. All rights reserved. Distributed by Lumicore Trading. Made in Malaysia.</p>
       <nav class="footer__nav">
         <a href="#product">Product</a>
         <a href="#ingredients">Ingredients</a>

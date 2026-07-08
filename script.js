@@ -60,12 +60,16 @@
     });
   });
 
-  // Product thumbnail click (visual only for now)
+  // Product thumbnail gallery
+  const productMainImage = document.getElementById('productMainImage');
   const thumbs = document.querySelectorAll('.product__thumb');
   thumbs.forEach(function (thumb) {
     thumb.addEventListener('click', function () {
       thumbs.forEach(function (t) { t.classList.remove('product__thumb--active'); });
       thumb.classList.add('product__thumb--active');
+      if (productMainImage && thumb.dataset.image) {
+        productMainImage.src = thumb.dataset.image;
+      }
     });
   });
 

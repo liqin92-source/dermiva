@@ -5,7 +5,8 @@
   --color-primary: #4D7F71;
   --color-primary-dark: #3d6659;
   --color-text: #3A3D3F;
-  --color-text-muted: #6b6e70;
+  --color-text-muted: #54555A;
+  --color-text-body: #434447;
   --color-bg: #FCFDFD;
   --color-bg-alt: #f4f7f5;
   --color-sage: #A5BEAE;
@@ -13,8 +14,8 @@
   --color-white: #ffffff;
   --color-border: #e8ece9;
 
-  --font-sans: 'DM Sans', system-ui, -apple-system, sans-serif;
-  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-sans: 'Open Sans', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
 
   --space-xs: 0.5rem;
   --space-sm: 1rem;
@@ -350,9 +351,12 @@ button {
   color: var(--color-text);
 }
 
-.hero__title em {
-  font-style: italic;
+.hero__tagline {
+  font-size: 1.15rem;
+  font-weight: 500;
   color: var(--color-primary);
+  margin-bottom: var(--space-md);
+  letter-spacing: 0.01em;
 }
 
 .hero__text {
@@ -386,7 +390,8 @@ button {
 .hero__image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background: var(--color-bg-alt);
 }
 
 .hero__badge {
@@ -445,7 +450,8 @@ button {
 .product__image-main img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  padding: var(--space-md);
 }
 
 .product__thumbs {
@@ -461,6 +467,7 @@ button {
   border: 2px solid transparent;
   cursor: pointer;
   transition: border-color var(--transition);
+  padding: 0;
 }
 
 .product__thumb--active {
@@ -471,14 +478,29 @@ button {
 .product__thumb .placeholder-box {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background: var(--color-bg-alt);
+}
+
+.product__pricing {
+  margin-bottom: var(--space-md);
 }
 
 .product__price {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 600;
   color: var(--color-primary);
-  margin-bottom: var(--space-sm);
+  margin-bottom: 0.25rem;
+}
+
+.product__promo {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.product__promo strong {
+  color: var(--color-text);
+  font-weight: 600;
 }
 
 .product__desc {
@@ -501,6 +523,44 @@ button {
   font-size: 0.95rem;
 }
 
+.product__benefits {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.product__benefits-title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: var(--space-md);
+  color: var(--color-text);
+}
+
+.product__benefits-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm) var(--space-lg);
+}
+
+.product__benefits-list li {
+  font-size: 0.9rem;
+  color: var(--color-text-body);
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.product__benefits-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-sage);
+}
+
 /* ============================================
    Ingredients
    ============================================ */
@@ -520,7 +580,7 @@ button {
 
 .ingredients__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-md);
 }
 
@@ -539,6 +599,15 @@ button {
 
 .ingredient-card__icon {
   margin-bottom: var(--space-md);
+}
+
+.ingredient-card__dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  box-shadow: 0 0 0 4px var(--color-sage-light);
 }
 
 .ingredient-card__title {
@@ -573,9 +642,11 @@ button {
 .story__image--main {
   width: 100%;
   aspect-ratio: 5/6;
-  object-fit: cover;
+  object-fit: contain;
+  background: var(--color-bg-alt);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
+  padding: var(--space-md);
 }
 
 .story__image--accent {
@@ -588,6 +659,12 @@ button {
   overflow: hidden;
   border: 4px solid var(--color-bg);
   box-shadow: var(--shadow-md);
+}
+
+.story__image--accent img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .story__text {
@@ -764,6 +841,15 @@ button {
 .contact__visual {
   border-radius: var(--radius-lg);
   overflow: hidden;
+  background: var(--color-bg-alt);
+}
+
+.contact__visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  min-height: 320px;
+  padding: var(--space-md);
 }
 
 /* ============================================
@@ -781,6 +867,18 @@ button {
   align-items: center;
   justify-content: space-between;
   gap: var(--space-sm);
+}
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.footer__tagline {
+  font-size: 0.75rem;
+  color: var(--color-primary);
+  letter-spacing: 0.04em;
 }
 
 .footer__copy {
@@ -810,6 +908,10 @@ button {
 @media (max-width: 1024px) {
   .ingredients__grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product__benefits-list {
+    grid-template-columns: 1fr;
   }
 
   .faq__inner {
