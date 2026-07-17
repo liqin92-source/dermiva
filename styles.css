@@ -833,6 +833,15 @@ button {
   color: var(--color-primary);
 }
 
+.contact__link--placeholder {
+  cursor: default;
+  color: var(--color-text-muted);
+}
+
+.contact__link--placeholder:hover {
+  color: var(--color-text-muted);
+}
+
 .contact__link svg {
   flex-shrink: 0;
   color: var(--color-primary);
