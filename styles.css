@@ -503,6 +503,28 @@ button {
   font-weight: 600;
 }
 
+.product__shop-note {
+  margin-top: var(--space-sm);
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.product__shop-note a,
+.faq__answer a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.product__shop-note a:hover,
+.faq__answer a:hover {
+  color: var(--color-primary-dark);
+}
+
+.contact .btn {
+  margin-top: var(--space-md);
+}
+
 .product__desc {
   color: var(--color-text-muted);
   margin-bottom: var(--space-md);
