@@ -664,12 +664,10 @@ button {
 
 .story__image--main {
   width: 100%;
-  aspect-ratio: 5/6;
-  object-fit: contain;
-  background: var(--color-bg-alt);
+  aspect-ratio: 1;
+  object-fit: cover;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
-  padding: var(--space-md);
 }
 
 .story__image--accent {
