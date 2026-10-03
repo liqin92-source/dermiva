@@ -488,20 +488,32 @@ button {
 }
 
 .product__price {
-  font-size: 1.75rem;
+  font-size: 2.5rem;
   font-weight: 600;
+  line-height: 1.1;
   color: var(--color-primary);
-  margin-bottom: 0.25rem;
+  margin: 0.35rem 0 0.2rem;
 }
 
 .product__promo {
-  font-size: 0.875rem;
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  background: var(--color-primary);
+  padding: 0.28rem 0.65rem;
+  border-radius: var(--radius-full);
+}
+
+.product__retail {
+  font-size: 0.95rem;
   color: var(--color-text-muted);
 }
 
-.product__promo strong {
-  color: var(--color-text);
-  font-weight: 600;
+.product__retail s {
+  text-decoration: line-through;
 }
 
 .product__shop-note {

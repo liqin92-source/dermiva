@@ -73,6 +73,18 @@
     });
   });
 
+  // ChatGPT Ads: count every Shopee / Buy Now click as click_buynow
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest('a[href*="shp.ee"], a[href*="shopee"]');
+    if (!link || typeof oaiq !== 'function') return;
+    oaiq(
+      'measure',
+      'custom',
+      { type: 'custom' },
+      { custom_event_name: 'click_buynow' }
+    );
+  });
+
   // Event listeners
   window.addEventListener('scroll', onScroll, { passive: true });
   navToggle.addEventListener('click', toggleNav);
