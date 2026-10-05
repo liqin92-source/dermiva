@@ -158,17 +158,6 @@ img {
   box-shadow: var(--shadow);
 }
 
-.hero-card:before {
-  content: "";
-  position: absolute;
-  width: 320px;
-  height: 320px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  border-radius: 50%;
-  right: -70px;
-  top: -45px;
-}
-
 .hero-card img {
   width: 100%;
   height: auto;
