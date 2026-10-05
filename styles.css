@@ -175,6 +175,7 @@ img {
   height: 100%;
   min-height: 650px;
   object-fit: cover;
+  object-position: center 78%;
 }
 
 .floating {
@@ -236,8 +237,8 @@ img {
 
 .product-photo img {
   width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
 }
 
 .price {
