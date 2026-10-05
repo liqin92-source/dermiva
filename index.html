@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <!-- ChatGPT Ads Measurement Pixel. Replace YOUR_PIXEL_ID with the Pixel ID from Ads Manager → Conversions. -->
+  <!-- ChatGPT Ads Measurement Pixel -->
   <script>
     (function (w, d, s, u) {
       if (w.oaiq) return;
@@ -24,7 +24,7 @@
     })(window, document, "script", "https://bzrcdn.openai.com/sdk/oaiq.min.js");
 
     oaiq("init", {
-      pixelId: "YOUR_PIXEL_ID"
+      pixelId: "6coehssqpaZ66PXwQSJrqq"
     });
   </script>
 </head>
@@ -61,7 +61,7 @@
           </div>
         </div>
         <div class="hero-card">
-          <img src="images/gentle-gel-cleanser.png" alt="Dermiva Gentle Gel Cleanser">
+          <img src="images/product-shoot-lifestyle.png" alt="Dermiva Gentle Gel Cleanser on a stone tray with centella leaves">
           <div class="floating">
             <strong>Cleanse thoroughly. Feel comfortable.</strong>
             <span>For oily, combination and sensitive skin.</span>
@@ -73,7 +73,18 @@
     <section class="section white" id="product">
       <div class="wrap product-grid">
         <div class="product-photo">
-          <img src="images/product-water.png" alt="Dermiva Gentle Gel Cleanser product visual">
+          <div class="product-slides" id="productSlides">
+            <img src="images/product-bottle.png" alt="Dermiva Gentle Gel Cleanser bottle">
+            <img src="images/product-shoot-lifestyle.png" alt="Dermiva Gentle Gel Cleanser with centella leaves">
+            <img src="images/product-shoot-table.png" alt="Dermiva Gentle Gel Cleanser on a wooden table">
+            <img src="images/product-shoot-window.png" alt="Dermiva Gentle Gel Cleanser by a window">
+          </div>
+          <button type="button" class="product-nav product-nav--prev" id="productPrev" aria-label="Previous photo">
+            <span aria-hidden="true">‹</span>
+          </button>
+          <button type="button" class="product-nav product-nav--next" id="productNext" aria-label="Next photo">
+            <span aria-hidden="true">›</span>
+          </button>
         </div>
         <div>
           <div class="eyebrow">Meet your everyday cleanser</div>
