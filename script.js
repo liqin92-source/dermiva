@@ -26,12 +26,17 @@
 
   document.addEventListener('click', function (event) {
     var link = event.target.closest('a[href*="shp.ee"], a[href*="shopee"]');
-    if (!link || typeof oaiq !== 'function') return;
-    oaiq(
-      'measure',
-      'custom',
-      { type: 'custom' },
-      { custom_event_name: 'click_buynow' }
-    );
+    if (!link) return;
+    if (typeof oaiq === 'function') {
+      oaiq(
+        'measure',
+        'custom',
+        { type: 'custom' },
+        { custom_event_name: 'click_buynow' }
+      );
+    }
+    if (typeof gtag === 'function') {
+      gtag('event', 'click_buynow', { link_url: link.href });
+    }
   });
 })();
